@@ -5,7 +5,6 @@ import ErrorMessage from "@/components/ErrorMessage";
 import { useMutation } from "@tanstack/react-query";
 import { changePassword } from "@/api/AuthAPI";
 import { toast } from "react-toastify";
-import { useState } from "react";
 import { Spinner } from "@chakra-ui/spinner";
 
 type ChangePasswordFormProps = {

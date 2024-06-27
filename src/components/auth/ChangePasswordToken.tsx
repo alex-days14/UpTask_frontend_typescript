@@ -4,7 +4,6 @@ import { useMutation } from "@tanstack/react-query";
 import { validateRecoveryToken } from "@/api/AuthAPI";
 import { toast } from "react-toastify";
 import { ConfirmAccountTokenForm } from "@/types/index";
-import { useState } from "react";
 
 type ChangePasswordTokenProps = {
     setIsValidCode: React.Dispatch<React.SetStateAction<boolean>>,

@@ -1,5 +1,5 @@
 import { FingerPrintIcon, UserIcon } from '@heroicons/react/20/solid'
-import { Link, useLocation, useNavigate } from 'react-router-dom'
+import { Link, useLocation } from 'react-router-dom'
 
 const tabs = [
     { name: 'Mi Cuenta', href: '/profile', icon: UserIcon },
@@ -11,9 +11,9 @@ function classNames(...classes: string[]) {
 }
 
 export default function Tabs() {
-    const navigate = useNavigate()
+    //const navigate = useNavigate()
     const location = useLocation()
-    const currentTab = tabs.filter(tab => tab.href === location.pathname)[0].href
+    //const currentTab = tabs.filter(tab => tab.href === location.pathname)[0].href
     
     return (
         <div className='mb-10'>
